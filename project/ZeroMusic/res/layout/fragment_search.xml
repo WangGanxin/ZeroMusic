@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/normal"
+    android:orientation="vertical" >
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:scrollbars="none" >
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content" >
+
+            <RelativeLayout
+                android:id="@+id/search_layout"
+                android:layout_width="fill_parent"
+                android:layout_height="80dp" >
+
+                <RelativeLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="40dp"
+                    android:layout_centerInParent="true"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:background="@drawable/border_search_edittext" >
+
+                    <ImageButton
+                        android:id="@+id/search_imgbtn"
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginRight="3dp"
+                        android:background="@drawable/icon_music_search_normal" />
+
+                    <EditText
+                        android:id="@+id/search_content_edittext"
+                        android:layout_width="fill_parent"
+                        android:layout_height="35dp"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginRight="5dp"
+                        android:layout_toLeftOf="@id/search_imgbtn"
+                        android:background="@null"
+                        android:hint="@string/search_hint"
+                        android:singleLine="true"
+                        android:textColor="@color/darkgrey"
+                        android:textSize="14sp" />
+                </RelativeLayout>
+
+                <View
+                    android:layout_width="fill_parent"
+                    android:layout_height="0.1dp"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp"
+                    android:background="@color/lightgrey" />
+            </RelativeLayout>
+
+            <ImageView
+                android:id="@+id/search_no_result_img"
+                android:layout_width="fill_parent"
+                android:layout_height="400dp"
+                android:layout_below="@id/search_layout"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/error_offline"
+                android:visibility="gone" />
+
+            <LinearLayout
+                android:id="@+id/search_loading_layout"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/search_layout"
+                android:layout_marginTop="80dp"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:visibility="gone" >
+
+                <ImageView
+                    android:id="@+id/search_loading_img"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:background="@drawable/loading_music" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:text="@string/search_good_music_coming"
+                    android:textColor="@color/darkgrey"
+                    android:textSize="14sp" />
+            </LinearLayout>
+
+            <com.ganxin.zeromusic.common.widget.gridview.DisabledScrollGridView
+                android:id="@+id/search_rankinglist_gridview"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/search_layout"
+                android:layout_margin="10dp"
+                android:horizontalSpacing="10dp"
+                android:listSelector="#00000000"
+                android:numColumns="auto_fit"
+                android:paddingBottom="10dp"
+                android:scrollbars="none"
+                android:stretchMode="columnWidth"
+                android:verticalSpacing="10dp"
+                android:visibility="visible" />
+
+            <LinearLayout
+                android:id="@+id/search_result_layout"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/search_layout"
+                android:orientation="vertical">
+
+                <com.ganxin.zeromusic.common.widget.listview.DisabledScrollListView
+                    android:id="@+id/search_result_artist_listview"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content" 
+                    android:divider="@drawable/line_h"
+                    android:visibility="gone"/>
+                
+                <TextView
+                    android:id="@+id/search_result_line" 
+                    android:layout_width="fill_parent"
+                    android:layout_height="0.1dp"
+                    android:background="@drawable/line_h"
+                    android:visibility="gone"/>
+                
+                <com.ganxin.zeromusic.common.widget.listview.DisabledScrollListView
+                    android:id="@+id/search_result_song_listview"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:descendantFocusability="blocksDescendants" 
+                    android:divider="@drawable/line_h"
+                    android:visibility="gone"/>
+            </LinearLayout>
+        </RelativeLayout>
+    </ScrollView>
+
+</LinearLayout>

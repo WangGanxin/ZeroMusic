@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="60dp"
+    android:background="@drawable/sel_list_item"
+    android:descendantFocusability="blocksDescendants"
+    android:id="@+id/search_rankinglist_layout">
+
+    <RelativeLayout
+        android:id="@+id/search_rankinglist_nums_layout"
+        android:layout_width="55dp"
+        android:layout_height="60dp"
+        android:background="@color/normal" >
+
+        <TextView
+            android:id="@+id/search_rankinglist_nums_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="01"
+            android:textColor="@color/darkgrey"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <View
+            android:layout_width="0.1dp"
+            android:layout_height="fill_parent"
+            android:layout_alignParentRight="true"
+            android:background="@color/lightgrey" />
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/search_rankinglist_item_song"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_toRightOf="@id/search_rankinglist_nums_layout"
+        android:ellipsize="end"
+        android:maxEms="10"
+        android:singleLine="true"
+        android:text="@string/song"
+        android:textColor="@color/black"
+        android:textSize="18sp" />
+
+    <TextView
+        android:id="@+id/search_rankinglist_item_artist"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/search_rankinglist_item_song"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="3dp"
+        android:layout_toRightOf="@id/search_rankinglist_nums_layout"
+        android:ellipsize="end"
+        android:maxEms="10"
+        android:singleLine="true"
+        android:text="@string/artist"
+        android:textColor="@color/darkgrey"
+        android:textSize="14sp" />
+
+    <ImageButton
+        android:id="@+id/search_rankinglist_item_download"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:background="@drawable/sel_search_download_btn" />
+
+</RelativeLayout>

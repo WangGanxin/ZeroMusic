@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:gwidget="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/timing_list_item_layout"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/sel_home_list_item"
+    android:minHeight="60dp" >
+
+    <TextView
+        android:id="@+id/timing_list_item_time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="10dp"
+        android:singleLine="true"
+        android:text="@string/time"
+        android:textSize="16sp" />
+
+    <TextView
+        android:id="@+id/timing_list_item_week"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/timing_list_item_time"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="5dp"
+        android:singleLine="true"
+        android:text="@string/timing_open_monday"
+        android:textSize="14sp" />
+
+    <CheckBox
+        android:id="@+id/timing_list_item_switch"
+        android:layout_width="75dp"
+        android:layout_height="30dp"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="10dp"
+        android:background="@drawable/sel_togglebtn"
+        android:checked="false"
+        android:button="@null" />
+
+    <ImageView
+        android:id="@+id/timing_list_item_del"
+        android:layout_width="28dp"
+        android:layout_height="28dp"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="15dp"
+        android:layout_toLeftOf="@id/timing_list_item_switch"
+        android:scaleType="centerInside"
+        android:src="@drawable/icon_timing_del" />
+
+</RelativeLayout>

@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center_vertical"
+    android:orientation="vertical">
+
+    <ScrollView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:scrollbars="none" >
+
+        <FrameLayout
+            android:layout_width="285dp"
+            android:layout_height="285dp"
+            android:gravity="center_vertical"
+            android:orientation="vertical" >
+
+            <com.android.volley.toolbox.NetworkImageView
+                android:id="@+id/home_play_network_picture"
+                android:layout_width="285dp"
+                android:layout_height="285dp"
+                android:layout_gravity="center"
+                android:scaleType="fitXY"
+                android:visibility="visible" />
+
+            <ImageView
+                android:id="@+id/home_play_pic_default"
+                android:layout_width="285dp"
+                android:layout_height="285dp"
+                android:layout_gravity="center"
+                android:background="@drawable/home_play_picture_default"
+                android:scaleType="fitXY"
+                android:visibility="visible" />
+
+            <RelativeLayout
+                android:id="@+id/home_play_loading_layout"
+                android:layout_width="285dp"
+                android:layout_height="285dp"
+                android:layout_gravity="center"
+                android:background="@drawable/home_play_picture_loading_bg"
+                android:visibility="gone" >
+
+                <ImageView
+                    android:id="@+id/home_play_loading_img"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:background="@drawable/loading_img" />
+
+                <TextView
+                    android:id="@+id/home_play_loading_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/home_play_loading_img"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="10dp"
+                    android:text="@string/home_play_picture_loading"
+                    android:textColor="@color/darkgrey"
+                    android:textSize="12sp" />
+            </RelativeLayout>
+        </FrameLayout>
+    </ScrollView>
+
+</FrameLayout>

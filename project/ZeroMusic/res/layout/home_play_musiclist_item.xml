@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="60dp"
+    android:gravity="center_vertical"
+    android:paddingBottom="5dp" 
+    android:background="@drawable/sel_list_item">
+    
+    <TextView 
+        android:id="@+id/player_listitem_number"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="10dp"
+        android:text="01"
+        android:textColor="@color/darkgrey"
+        android:textSize="14sp"/>
+
+    <TextView
+        android:id="@+id/player_listitem_song_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/player_listitem_number"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+        android:singleLine="true"
+        android:text="@string/song"
+        android:textColor="@color/black"
+        android:ellipsize="end"
+        android:textSize="18sp" />
+
+    <TextView
+        android:id="@+id/player_listitem_artist_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/player_listitem_song_text"
+        android:layout_toRightOf="@id/player_listitem_number"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="3dp"
+        android:ellipsize="end"
+        android:singleLine="true"
+        android:text="@string/artist"
+        android:textColor="@color/darkgrey"
+        android:textSize="14sp" />
+
+</RelativeLayout>

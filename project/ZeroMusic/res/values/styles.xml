@@ -1,0 +1,86 @@
+<resources>
+
+    <!--
+        Base application theme, dependent on API level. This theme is replaced
+        by AppBaseTheme from res/values-vXX/styles.xml on newer devices.
+    -->
+    <style name="AppBaseTheme" parent="android:Theme.Light">
+        <!--
+            Theme customizations available in newer API levels can go in
+            res/values-vXX/styles.xml, while customizations related to
+            backward-compatibility can go here.
+        -->
+    </style>
+
+    <!-- Application theme. -->
+    <style name="AppTheme" parent="AppBaseTheme">
+        <!-- All customizations that are NOT specific to a particular API-level can go here. -->
+    </style>
+    
+    <!-- 清除App启动页面黑屏或白屏 -->
+    <style name="App_Loading_Theme_Remove_Black_And_Fullscreen" parent="@android:style/Theme.NoTitleBar.Fullscreen">
+        <item name="android:windowBackground">@drawable/loading_bg</item>  
+        <item name="android:windowNoTitle">true</item>   
+    </style>
+    
+    <!-- 清除主界面黑屏 -->
+    <style name="App_Main_Theme_Remove_Black" parent="@android:style/Theme.Light.NoTitleBar">
+        <item name="android:windowIsTranslucent">true</item> 
+        <item name="android:windowNoTitle">true</item>   
+    </style> 
+    
+    <style name="StyledIndicators" parent="@android:style/Theme.Light.NoTitleBar">
+        <item name="vpiCirclePageIndicatorStyle">@style/CustomCirclePageIndicator</item>
+    </style>
+
+    <style name="CustomCirclePageIndicator">
+        <item name="fillColor">#FF6B8E23</item>
+        <item name="strokeColor">#FF6B8E23</item>
+        <item name="strokeWidth">1dp</item>
+        <item name="radius">3dp</item>
+        <item name="centered">true</item>
+    </style>
+    
+    <!-- 自定义对话框的样式 -->
+    <style name="customDialog" parent="@android:Theme.Dialog">
+        <item name="android:windowFrame">@null</item>
+        <item name="android:windowNoTitle">true</item> 
+        <item name="android:windowBackground">@color/white</item>
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:windowContentOverlay">@null</item>       
+    </style>
+    
+    <!-- 自定义加载对话框的样式 -->
+    <style name="loadingDialog" parent="@android:Theme.Dialog">
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowBackground">@drawable/border_dialog_loading</item>
+        <item name="android:windowIsFloating">true</item>     
+    </style>
+    
+    <!-- 自定义checkbox的样式 -->
+    <style name="customCheckBox" parent="@android:style/Widget.CompoundButton.CheckBox">
+        <item name="android:button">@drawable/sel_checkbox</item>
+        <item name="android:paddingLeft">10dp</item>
+  	    <item name="android:maxHeight">15dp</item>
+    </style>
+    
+    <!-- 搜索关键字显示的样式 -->
+    <style name="keywordStyle">  
+        <item name="android:textSize">18sp</item>  
+        <item name="android:textColor">@color/green</item>   
+    </style>
+    
+    <!-- checkbox相关 -->
+    <style name="AppTheme_Default" parent="@android:style/Theme.Holo.Light.DarkActionBar">
+        <item name="titleback">@color/iting_v2_title_color</item>
+    </style>
+
+    <style name="AppTheme_Another" parent="AppTheme_Default">
+        <item name="titleback">@color/iting_v2_title_green_color</item>
+    </style>
+    <!-- checkbox相关 -->
+    
+    <style name="NumberPicker_Light" parent="@android:style/Theme.Light.NoTitleBar">
+        <item name="numberPickerStyle">@style/NPWidget.Holo.Light.NumberPicker</item>
+    </style>
+</resources>

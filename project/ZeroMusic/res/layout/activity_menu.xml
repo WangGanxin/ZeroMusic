@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical"
+    android:background="@android:color/white" >
+    
+    <LinearLayout 
+        android:id="@+id/layout_top"
+        android:orientation="vertical"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content">
+        
+        <ImageView
+                android:layout_width="fill_parent"
+                android:layout_height="3dp"
+                android:background="#b6d160"/>
+        
+        <FrameLayout 
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content">
+            
+            <Button
+                android:id="@+id/title_bar_left_menu" 
+                android:layout_width="28dp"
+                android:layout_height="28dp"
+                android:background="@drawable/titlebar_menu_selector"
+                android:layout_gravity="left|center_vertical"
+                android:layout_marginLeft="10dp"/>
+            
+            <TextView
+                android:id="@+id/title_bar_music"
+                android:layout_width="220dp"
+                android:layout_height="wrap_content"
+                android:padding="7dp"
+                android:text="@string/app_name"
+                android:textSize="24sp"
+                android:textColor="#999999" 
+                android:singleLine="true"
+                android:ellipsize="marquee"
+                android:marqueeRepeatLimit="marquee_forever"             
+                android:layout_gravity="center"             
+                android:gravity="center"/>
+            
+            <Button
+                android:id="@+id/title_bar_right_menu"
+                android:layout_width="28dp"
+                android:layout_height="28dp"
+                android:background="@drawable/titlebar_menu_selector"
+                android:layout_gravity="right|center_vertical"
+                android:layout_marginRight="10dp"/>                              
+        </FrameLayout>
+        
+        <ImageView
+                android:layout_width="fill_parent"
+                android:layout_height="5dp"
+                android:background="#ebebeb"/>               
+    </LinearLayout>
+    
+    <FrameLayout
+            android:id="@+id/main_fragment"
+            android:orientation="vertical"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent">
+    </FrameLayout>
+    
+</LinearLayout>

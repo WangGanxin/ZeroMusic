@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <declare-styleable name="iconView">
+        <attr name="icon" format="reference|string" />
+        <attr name="iconSize" format="dimension" />
+        <attr name="iconColor" format="reference|color" />
+        <attr name="iconCheckedColor" format="reference|color" />
+        <attr name="iconChecked" format="reference|string" />
+        <attr name="iconGravity">
+            <enum name="left" value="0" />
+            <enum name="top" value="1" />
+            <enum name="right" value="2" />
+            <enum name="bottom" value="3" />
+            <enum name="rightBottom" value="4" />
+            <enum name="rightTop" value="5" />
+            <enum name="leftBottom" value="6" />
+            <enum name="leftTop" value="7" />
+            <enum name="center" value="8" />
+        </attr>
+        <attr name="iconScaleType">
+            <enum name="center" value="0" />
+            <enum name="withWidth" value="1" />
+            <enum name="withHeight" value="2" />
+        </attr>
+    </declare-styleable>
+    <declare-styleable name="changetheme">
+        <attr name="titleback" format="reference" />
+    </declare-styleable>
+
+</resources>

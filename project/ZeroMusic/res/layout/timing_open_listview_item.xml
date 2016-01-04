@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:gwidget="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/timing_open_list_item_layout"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/sel_home_list_item"
+    android:minHeight="50dp" >
+
+    <TextView
+        android:id="@+id/timing_open_list_item_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="15dp"
+        android:text="@string/title"
+        android:textColor="@color/black"
+        android:textSize="16sp" />
+
+    <com.ganxin.zeromusic.common.widget.checkbox.IconCheckBox
+        android:id="@+id/timing_open_list_item_checkbox"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="15dp"
+        gwidget:icon="@string/icon_round_unchecked"
+        gwidget:iconChecked="@string/icon_checked"
+        gwidget:iconCheckedColor="@color/iting_v2_title_green_color"
+        gwidget:iconColor="@color/gray_a9"
+        gwidget:iconSize="17sp" />
+
+</RelativeLayout>

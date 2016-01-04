@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/timing_open_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/normal"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:id="@+id/timing_open_actionbar"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal" >
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical" >
+
+                <ImageButton
+                    android:id="@+id/timing_open_actionbar_back"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/sel_main_actionbar_item"
+                    android:padding="15dp"
+                    android:src="@drawable/actionbar_back" />
+
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="3dp"
+                    android:background="@color/green" />
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:layout_marginBottom="5dp"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/line_actionbar_divider" />
+
+            <TextView
+                android:id="@+id/timing_open_actionbar_title"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_weight="1"
+                android:gravity="center_horizontal"
+                android:singleLine="true"
+                android:text="@string/timing_open"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/timing_open_actionbar_right_diviler"
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:layout_marginBottom="5dp"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/line_actionbar_divider" />
+
+            <ImageButton
+                android:id="@+id/timing_open_actionbar_scan"
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:background="@drawable/sel_main_actionbar_item"
+                android:padding="15dp"
+                android:src="@drawable/sel_timing_open_save_btn" />
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="1dp"
+            android:background="@color/green" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:background="@color/lightgreen"
+        android:orientation="horizontal" >
+
+        <net.simonvt.numberpicker.NumberPicker
+            android:id="@+id/timing_open_hours"
+            android:layout_width="160dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="100dp"
+            android:layout_weight="1"
+            app:numberPickerStyle="@style/NPWidget.Holo.Light.NumberPicker" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:gravity="center_vertical"
+            android:text="@string/timing_open_colon"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <net.simonvt.numberpicker.NumberPicker
+            android:id="@+id/timing_open_minutes"
+            android:layout_width="160dp"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="100dp"
+            android:layout_weight="1"
+            app:numberPickerStyle="@style/NPWidget.Holo.Light.NumberPicker" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/lightgreen"
+        android:gravity="center_horizontal" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:layout_marginTop="10dp"
+            android:text="@string/timing_open_player_tips"
+            android:textColor="@color/steelblue"
+            android:textSize="12sp" />
+    </LinearLayout>
+
+    <ListView
+        android:id="@+id/timing_open_week_listview"
+        android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:listSelector="@null" />
+
+</LinearLayout>

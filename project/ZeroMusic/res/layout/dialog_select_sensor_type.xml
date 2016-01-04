@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:gwidget="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/white"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="45dp"
+        android:gravity="center"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/setting_sensor_select_title"
+            android:textColor="@color/black"
+            android:textSize="14sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/setting_sensor_layout1"
+        android:layout_width="fill_parent"
+        android:layout_height="40dp"
+        android:background="@drawable/sel_about_list_item"
+        android:gravity="center_vertical"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:layout_weight="1"
+            android:text="@string/setting_sensor_level_1"
+            android:textColor="@color/green"
+            android:textSize="14sp" />
+
+        <com.ganxin.zeromusic.common.widget.checkbox.IconCheckBox
+            android:id="@+id/setting_sensor_checkbox1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="15dp"
+            android:visibility="gone"
+            gwidget:icon="@string/icon_round_unchecked"
+            gwidget:iconChecked="@string/icon_checked"
+            gwidget:iconCheckedColor="@color/iting_v2_title_green_color"
+            gwidget:iconColor="@color/gray_a9"
+            gwidget:iconSize="16sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/setting_sensor_layout2"
+        android:layout_width="fill_parent"
+        android:layout_height="40dp"
+        android:background="@drawable/sel_about_list_item"
+        android:gravity="center_vertical"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:layout_weight="1"
+            android:text="@string/setting_sensor_level_2"
+            android:textColor="@color/green"
+            android:textSize="14sp" />
+
+        <com.ganxin.zeromusic.common.widget.checkbox.IconCheckBox
+            android:id="@+id/setting_sensor_checkbox2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="15dp"
+            android:visibility="gone"
+            gwidget:icon="@string/icon_round_unchecked"
+            gwidget:iconChecked="@string/icon_checked"
+            gwidget:iconCheckedColor="@color/iting_v2_title_green_color"
+            gwidget:iconColor="@color/gray_a9"
+            gwidget:iconSize="16sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/setting_sensor_layout3"
+        android:layout_width="fill_parent"
+        android:layout_height="40dp"
+        android:background="@drawable/sel_about_list_item"
+        android:gravity="center_vertical"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:layout_weight="1"
+            android:text="@string/setting_sensor_level_3"
+            android:textColor="@color/green"
+            android:textSize="14sp" />
+
+        <com.ganxin.zeromusic.common.widget.checkbox.IconCheckBox
+            android:id="@+id/setting_sensor_checkbox3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="15dp"
+            android:visibility="gone"
+            gwidget:icon="@string/icon_round_unchecked"
+            gwidget:iconChecked="@string/icon_checked"
+            gwidget:iconCheckedColor="@color/iting_v2_title_green_color"
+            gwidget:iconColor="@color/gray_a9"
+            gwidget:iconSize="16sp" />
+    </LinearLayout>
+
+    <View
+        android:id="@+id/dialog_select_line"
+        android:layout_width="fill_parent"
+        android:layout_height="0.5dp"
+        android:background="@color/lightgrey" />
+
+    <LinearLayout
+        android:id="@+id/dialog_select_bottom"
+        android:layout_width="fill_parent"
+        android:layout_height="45dp"
+        android:orientation="horizontal" >
+
+        <LinearLayout
+            android:id="@+id/dialog_select_leftLayout"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            android:background="@drawable/sel_dialog_btn"
+            android:gravity="center"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/confirm"
+                android:textColor="@color/black"
+                android:textSize="14sp" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="0.5dp"
+            android:layout_height="fill_parent"
+            android:background="@color/lightgrey" />
+
+        <LinearLayout
+            android:id="@+id/dialog_select_rightLayout"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            android:background="@drawable/sel_dialog_btn"
+            android:gravity="center"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/cancel"
+                android:textColor="@color/black"
+                android:textSize="14sp" />
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

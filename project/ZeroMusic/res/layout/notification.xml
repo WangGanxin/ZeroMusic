@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" 
+    android:background="@drawable/sel_list_item"
+    android:paddingBottom="5dp"
+    android:paddingLeft="20dp"
+    android:paddingTop="5dp" >
+    
+    <ImageView
+        android:id="@+id/notifi_icon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_launcher" />
+
+    <TextView
+        android:id="@+id/notifi_song"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@id/notifi_icon"
+        android:layout_marginLeft="15dp"
+        android:layout_toRightOf="@id/notifi_icon"
+        android:text="@string/song"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        android:singleLine="true" />
+
+    <TextView
+        android:id="@+id/notifi_artist"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@id/notifi_song"
+        android:layout_below="@id/notifi_song"
+        android:text="@string/artist"
+        android:textColor="@color/darkgrey"
+        android:textSize="16sp"
+        android:singleLine="true" />
+</RelativeLayout>

@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">零听音乐</string>
+    <string name="app_version">Version : 1.0 </string>
+    <string name="hello_world">Hello world!</string>
+    <string name="menu_settings">Settings</string>
+
+    <string name="menu_home">我的零听</string>
+    <string name="menu_search">歌曲搜索</string>
+    <string name="menu_timing">定时音乐</string>
+    <string name="menu_setting">设置</string>
+    <string name="menu_about">关于</string>
+    <string name="menu_exit">退出</string>
+    
+    <string name="my_music">我的音乐</string>
+    <string name="my_playlist">我的歌单</string>
+    <string name="local_music">本地音乐</string>
+    <string name="artist">歌手</string>    
+    <string name="download">下载</string>
+    <string name="download_manager">下载管理</string>
+    <string name="download_done">已下载</string>
+    <string name="download_doing">正在下载</string>
+    <string name="ilike">我喜欢</string>
+    
+    <string name="local_music_default_sum">首</string>    
+    <string name="artist_default_sum">个歌手</string>
+    <string name="download_default_sum">首</string>
+    <string name="ilike_default_sum">首歌</string>
+    
+    <string name="song">歌曲</string>
+    <string name="detail">歌曲信息</string>
+    <string name="ringtone">铃声</string>
+    <string name="delete">删除</string>    
+    
+    <string name="time">0:00</string>
+    <string name="favor_not_add_music">还没添加喜欢的歌曲哦</string>
+    <string name="please_scan_local_music">请先扫描本地歌曲吧</string>
+    <string name="scaning">正在扫描中...</string>
+    <string name="sdcard_not_exist">外部SD卡不存在哦</string>
+    <string name="music_not_exist">当前手机没有歌曲</string>
+    <string name="confirm">确定</string>
+    <string name="cancel">取消</string>
+    <string name="cancellike">取消喜欢</string>
+    <string name="favor_add_success">已添加我喜欢列表</string>
+    <string name="favor_add_repeat">不能重复添加哦</string>
+    <string name="favor_cancel_success">取消我喜欢</string>
+    <string name="favor_cancel_failure">取消失败了</string>
+    <string name="ringtone_add_success">设置铃声成功</string>
+    
+    <string name="confirm_del_music">是否删除歌曲</string>
+    <string name="meanwhile_del_localfile">同时删除本地文件</string>
+    <string name="del_music_success">删除歌曲成功</string>
+    <string name="del_music_failed">删除歌曲失败</string>
+    <string name="del_music_title_tip">提示</string>
+    <string name="del_music_content_delall_download_music">批量移除下载的歌曲 ？</string>
+    <string name="del_music_content_delall_download_task">批量移除下载任务 ？</string>
+    <string name="del_music_content_delall_success">移除成功</string>
+    <string name="del_music_content_delall_download_no_music">当前没有下载的歌曲</string>
+    <string name="del_music_content_delall_download_no_task">当前没有下载任务</string>
+    
+    <string name="set_mute_mode">静音模式</string>
+    <string name="cancel_mute_mode">取消静音</string>
+    
+    <string name="playmode_for_random">随机播放</string>
+    <string name="playmode_for_single">单曲循环</string>
+    <string name="playmode_for_order">顺序播放</string>
+    <string name="playmode_for_loop">循环播放</string>
+    
+    <string name="home_play_picture_loading">loading...</string>
+    <string name="network_is_not_connected">当前没有网络连接呢</string>
+    
+    <string name="search_hint">歌手名/歌曲名</string>
+    <string name="search_rankinglist_name">榜单名称</string>
+    <string name="rankinglist_newsong">新歌榜</string>
+    <string name="rankinglist_hotsong">热歌榜</string>
+    <string name="rankinglist_foreignsong">欧美榜</string>
+    <string name="rankinglist_oldsong">经典老歌榜</string>
+    <string name="rankinglist_lovesong">情歌对唱榜</string>
+    <string name="rankinglist_filmsong">影视金曲榜</string>
+    
+    <string name="search_good_music_coming">好音乐马上就来</string>
+    <string name="search_no_result">没有搜索到结果呢</string>
+    <string name="search_rankinglist_update_date">更新日期</string>
+    <string name="search_rankinglist_description">提示内容</string>
+    <string name="search_rankinglist_no_result">没有获取到歌曲呢</string>
+     
+    <string name="timing_exit">定时关闭</string>
+    <string name="timing_open">定时起床音乐</string>
+        
+    <string name="setting_earphone_pause">拔出耳机自动暂停</string>
+    <string name="setting_player_ad">播放界面广告条</string>
+    <string name="setting_change_pic">甩动手机切换歌曲封面</string>
+    <string name="setting_change_pic_strength1">灵敏</string>
+    <string name="setting_change_pic_strength2">适中</string>
+    <string name="setting_change_pic_strength3">迟缓</string>
+    <string name="setting_clear_cache">清除缓存</string>
+    <string name="setting_clear_cache_msg">清除缓存后会导致图片数据重新加载\n是否清除？</string>
+    <string name="setting_sensor_select_title">选择甩动力度</string>
+    <string name="setting_sensor_level_1">灵		敏</string>
+    <string name="setting_sensor_level_2">适		中</string>
+    <string name="setting_sensor_level_3">迟		缓</string>
+    
+    <string name="about_update_check">升级检测</string>
+    <string name="about_recommend_friend">推荐给好友</string>
+    <string name="about_zero_music">关于零听</string>
+    <string name="about_copyright_msg">Copyright ©2015 零听音乐   All Rights Reserved</string>
+    <string name="about_current_was_last_version">当前应用为最新版本</string>
+    <string name="about_checking_version">正在检测中...</string>
+    <string name="about_share_content">零听，在音乐的路上总会遇见喜欢的你，快来体验吧！ http://zeromusic.kuaizhan.com</string>
+    <string name="about_share_title">零听音乐，遇见喜欢的你</string>
+    <string name="about_detail_loading_msg">加载中，请稍后...</string>
+        
+    <string name="title">标题</string>
+    <string name="dialog_select_music_msg">歌曲名称 (4.2M)</string>
+    <string name="get_downmusic_error">获取下载信息失败</string>
+    <string name="get_downmusic_url_error">获取地址信息失败</string>
+    <string name="get_downmusic_tips">下载提示</string>
+    
+    <string name="doing_item_state_waiting">等待中</string>
+    <string name="doing_item_state_started">开始下载</string>
+    <string name="doing_item_state_failure">下载失败</string>
+    <string name="doing_item_state_canceled">暂停</string>
+    
+    <string name="done_not_music_msg">暂时没有下载的歌曲哦</string>
+    <string name="dialog_select_music_start_downloading">正在下载...</string>
+        
+    <string name="timing_open_colon">:</string>    
+    <string name="timing_open_monday">周一</string>    
+    <string name="timing_open_tuesday">周二</string>    
+    <string name="timing_open_wednesday">周三</string>    
+    <string name="timing_open_thursday">周四</string>    
+    <string name="timing_open_friday">周五</string>    
+    <string name="timing_open_saturday">周六</string>    
+    <string name="timing_open_sunday">周日</string>  
+    
+    <string name="timing_open_please_select_day">请选择日期</string> 
+    <string name="timing_open_set_date_error">设置日期发生错误</string> 
+    <string name="timing_open_unknow_error">发生未知错误</string> 
+    <string name="timing_open_has_exist_item">已存在该启动项</string> 
+    <string name="timing_open_player_tips">tips: 起床音乐默认播放上次聆听的本地歌曲</string> 
+    <string name="timing_open_del_error">删除失败</string> 
+    <string name="timing_open_open_error">开启失败</string> 
+    <string name="timing_open_close_error">关闭失败</string> 
+
+    <string name="app_auto_starting">应用自启中,5秒后开始播放音乐</string> 
+    
+    <!-- checkbox相关 -->
+    <string name="icon_round_unchecked">M305.508,373.791c-12.103,0-21.915,9.812-21.915,21.914
+	c0,12.103,9.812,21.914,21.915,21.914s21.914-9.811,21.914-21.914C327.422,383.603,317.611,373.791,305.508,373.791z
+	 M305.507,416.743c-11.619,0-21.038-9.419-21.038-21.038s9.419-21.038,21.038-21.038s21.038,9.419,21.038,21.038
+	S317.126,416.743,305.507,416.743z</string>
+    <string name="icon_checked">M100.487,5C48.303,5,5.999,47.303,5.999,99.488
+	c0,52.184,42.304,94.488,94.488,94.488c52.185,0,94.488-42.304,94.488-94.488C194.976,47.303,152.672,5,100.487,5z M163.572,80.328
+	l-64.729,64.729c-0.375,0.53-0.788,1.042-1.263,1.517c-2.277,2.278-5.273,3.395-8.258,3.362c-2.985,0.033-5.98-1.084-8.258-3.362
+	c-0.475-0.475-0.889-0.987-1.264-1.519l-43.73-43.73c-4.491-4.491-4.491-11.771,0-16.262c4.49-4.49,11.771-4.49,16.261,0
+	l36.991,36.991l57.988-57.988c4.491-4.491,11.771-4.491,16.261,0C168.063,68.557,168.063,75.837,163.572,80.328z</string>
+</resources>

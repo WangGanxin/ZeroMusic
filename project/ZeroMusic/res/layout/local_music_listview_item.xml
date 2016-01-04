@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:descendantFocusability="blocksDescendants"
+    android:orientation="vertical" >
+    
+    <RelativeLayout 
+        android:layout_width="fill_parent"
+        android:layout_height="60dp"
+        android:background="@drawable/sel_list_item"
+        android:gravity="center_vertical">
+        
+        <ImageView
+            android:id="@+id/localmusic_listitem_indicator"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:background="@drawable/left_indicator"
+            android:layout_marginTop="15dp"
+            android:layout_marginBottom="15dp" />        
+      
+        <TextView
+            android:id="@+id/localmusic_listitem_song_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="10dp"
+            android:ellipsize="end"
+            android:maxEms="12"
+            android:text="@string/song"
+            android:textColor="@color/black"
+            android:textSize="18sp"
+            android:singleLine="true"/>
+        
+        <ImageView
+            android:id="@+id/localmusic_listitem_img"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@id/localmusic_listitem_song_text"
+            android:layout_below="@id/localmusic_listitem_song_text"
+            android:layout_marginTop="5dp"
+            android:baselineAlignBottom="true"
+            android:src="@drawable/icon_local_marker" />
+        
+        <TextView
+            android:id="@+id/localmusic_listitem_artist_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/localmusic_listitem_song_text"
+            android:layout_marginLeft="2dp"
+            android:layout_marginTop="3dp"
+            android:layout_toRightOf="@id/localmusic_listitem_img"
+            android:ellipsize="end"
+            android:maxEms="12"
+            android:text="@string/artist"
+            android:textColor="@color/darkgrey"
+            android:textSize="14sp"
+            android:singleLine="true" />
+        
+        <CheckBox
+            android:id="@+id/localmusic_listitem_action"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:background="@drawable/sel_local_list_item_arrow_bg"
+            android:button="@null"
+            android:drawableBottom="@drawable/sel_local_list_item_arrow"
+            android:paddingBottom="10dp"
+            android:paddingLeft="30dp"
+            android:paddingRight="10dp"/>        
+        
+    </RelativeLayout>
+    
+    <!-- popdown默认设置gone -->
+    <LinearLayout 
+        android:id="@+id/local_popdown"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:visibility="visible" >
+        
+        <Button
+            android:id="@+id/local_popdown_favor"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/sel_popdown_item"
+            android:drawableTop="@drawable/popdown_collect"
+            android:paddingTop="5dp"
+            android:text="@string/ilike"
+            android:textColor="@color/white"
+            android:textSize="12sp" />
+
+        <Button
+            android:id="@+id/local_popdown_detail"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/sel_popdown_item"
+            android:drawableTop="@drawable/popdown_detail"
+            android:paddingTop="5dp"
+            android:text="@string/detail"
+            android:textColor="@color/white"
+            android:textSize="12sp" />
+
+        <Button
+            android:id="@+id/local_popdown_ringtone"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/sel_popdown_item"
+            android:drawableTop="@drawable/popdown_ringtone"
+            android:paddingTop="5dp"
+            android:text="@string/ringtone"
+            android:textColor="@color/white"
+            android:textSize="12sp" />
+
+        <Button
+            android:id="@+id/local_popdown_del"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/sel_popdown_item"
+            android:drawableTop="@drawable/popdown_del"
+            android:paddingTop="5dp"
+            android:text="@string/delete"
+            android:textColor="@color/white"
+            android:textSize="12sp" />        
+        
+    </LinearLayout>
+    
+</LinearLayout>

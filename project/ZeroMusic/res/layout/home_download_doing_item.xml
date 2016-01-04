@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/doing_item_layout"
+    android:layout_width="match_parent"
+    android:layout_height="55dp"
+    android:minHeight="55dp"
+    android:orientation="vertical" >
+
+    <ImageView
+        android:id="@+id/doing_item_state"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:src="@drawable/icon_download_waitting" />
+
+    <TextView
+        android:id="@+id/doing_item_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:layout_marginLeft="5dp"
+        android:layout_toRightOf="@id/doing_item_state"
+        android:ellipsize="marquee"
+        android:singleLine="true"
+        android:text="@string/title"
+        android:textColor="@color/black"
+        android:textSize="15sp" />
+
+    <RelativeLayout
+        android:id="@+id/doing_item_del_btn"
+        android:layout_width="50dp"
+        android:layout_height="55dp"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:background="@drawable/sel_list_item" >
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:src="@drawable/icon_download_del"/>
+    </RelativeLayout>
+
+    <com.ganxin.numberprogressbar.NumberProgressBar
+        xmlns:custom="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/doing_item_progressbar"
+        style="@style/NumberProgressBar_Passing_Green"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/doing_item_title"
+        android:layout_marginRight="5dp"
+        android:layout_marginTop="3dp"
+        android:layout_toLeftOf="@id/doing_item_del_btn"
+        android:layout_toRightOf="@id/doing_item_state"
+        android:padding="5dp"
+        custom:progress="0" />
+    
+    <TextView
+        android:id="@+id/doing_item_status_textview" 
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/darkgrey"
+        android:textSize="10sp"
+        android:text="@string/doing_item_state_started"
+        android:layout_toLeftOf="@id/doing_item_del_btn"
+        android:layout_toRightOf="@id/doing_item_state"
+        android:layout_marginRight="5dp"
+        android:layout_marginTop="3dp"
+        android:layout_below="@id/doing_item_title"
+        android:layout_marginLeft="5dp"
+        android:visibility="visible"/>
+
+</RelativeLayout>

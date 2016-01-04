@@ -1,0 +1,30 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/loading_main_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".LoadingActivity">
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:scaleType="fitXY"
+        android:src="@drawable/bg_launcher"
+        android:visibility="gone" />
+
+    <RelativeLayout
+        android:id="@+id/loading_ads_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" 
+        android:layout_marginBottom="125dp">
+
+        <View
+            android:id="@+id/loading_cut_line"
+            android:layout_width="fill_parent"
+            android:layout_height="3dp"
+            android:layout_alignParentBottom="true"
+            android:background="@drawable/loading_pic_line"
+            android:visibility="visible"/>
+    </RelativeLayout>
+</RelativeLayout>

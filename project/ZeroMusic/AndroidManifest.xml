@@ -1,0 +1,221 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.ganxin.zeromusic.view"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk
+        android:minSdkVersion="14"
+        android:targetSdkVersion="19" />
+
+    <!-- 应用权限配置 -->
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_SETTINGS" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW" />
+    <uses-permission android:name="com.android.launcher.permission.INSTALL_SHORTCUT" />   
+    <uses-permission android:name="android.permission.GET_TASKS" /> <!-- QQ、QQ空间所需权限 -->
+
+    <application
+        android:name="com.ganxin.zeromusic.application.ZeroMusicApplication"
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+
+        <!-- 测试页面 -->
+        <!--
+             <activity 
+            android:name="test.TestActivity"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        -->
+        <!-- 启动界面 -->
+        <activity
+            android:name="com.ganxin.zeromusic.module.LoadingActivity"
+            android:label="@string/app_name"
+            android:icon="@drawable/ic_launcher"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait"
+            android:theme="@style/App_Loading_Theme_Remove_Black_And_Fullscreen" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <!-- 引导界面-->
+        <activity
+            android:name="com.ganxin.zeromusic.module.GuideActivity"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait"
+            android:theme="@style/App_Loading_Theme_Remove_Black_And_Fullscreen">
+        </activity>
+        <!-- 菜单界面 -->
+        <activity
+            android:name="com.ganxin.zeromusic.module.MenuActivity"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait"
+            android:theme="@style/App_Main_Theme_Remove_Black"
+            android:windowSoftInputMode="adjustPan" >
+        </activity>
+        <!-- 本地音乐界面 -->
+        <activity
+            android:name="com.ganxin.zeromusic.module.home.local.LocalMusicActivity"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Light.NoTitleBar" >
+        </activity>
+        <!-- 播放界面 -->
+        <activity
+            android:name="com.ganxin.zeromusic.module.home.play.PlayActivity"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait"
+            android:theme="@style/StyledIndicators" >
+        </activity>
+        <!-- 歌手选择界面 -->
+        <activity
+            android:name="com.ganxin.zeromusic.module.home.artist.ArtistSelectActivity"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Light.NoTitleBar" >
+        </activity>
+        <!-- 歌手音乐界面 -->
+        <activity
+            android:name="com.ganxin.zeromusic.module.home.artist.ArtistMusicActivity"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Light.NoTitleBar" >
+        </activity>
+        <!-- 下载界面 -->
+        <activity
+            android:name="com.ganxin.zeromusic.module.home.download.DownloadActivity"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Light.NoTitleBar" >
+        </activity>
+        <!-- 我喜欢界面 -->
+        <activity
+            android:name="com.ganxin.zeromusic.module.home.favor.FavorMusicActivity"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Light.NoTitleBar" >
+        </activity>
+        <!-- 排行榜界面 -->
+        <activity
+            android:name="com.ganxin.zeromusic.module.search.rankinglist.RankingListActivity"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Light.NoTitleBar" >
+        </activity>
+        <!-- 关于零听详情界面 -->
+        <activity
+            android:name="com.ganxin.zeromusic.module.about.detail.AboutDetailActivity"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Holo.Light.NoActionBar" >
+        </activity>
+        <!-- 定时起床音乐界面 -->
+        <activity
+            android:name="com.ganxin.zeromusic.module.timing.open.TimingOpenActivity"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait"
+            android:theme="@style/NumberPicker_Light" >
+        </activity>
+        <!-- 音乐播放服务 -->
+        <service
+            android:name="com.ganxin.zeromusic.service.PlayerService"
+            android:exported="false"
+            android:screenOrientation="portrait" >
+        </service>
+        <!-- 自启播放接收器 -->
+        <receiver
+            android:name="com.ganxin.zeromusic.receiver.PlayerReceiver"
+            android:exported="false" >
+            <intent-filter>
+                <action android:name="com.ganxin.zeromusic.AUTO_START" />
+            </intent-filter>
+        </receiver>
+
+        <!-- 以下为 youmi 添加必须的组件  start -->
+        <activity
+            android:name="grd.lks.oew.XX"
+            android:configChanges="keyboard|keyboardHidden|orientation|screenSize"
+            android:theme="@android:style/Theme.Light.NoTitleBar" >
+		</activity>
+		<service
+    		android:name="grd.lks.oew.II"
+    		android:exported="false" >
+		</service>
+		<receiver
+    		android:name="grd.lks.oew.AA" >
+    		<intent-filter>
+        		<action android:name="android.intent.action.PACKAGE_ADDED" />
+        		<data android:scheme="package" />
+    		</intent-filter>
+		</receiver>
+        <!-- 以下为 youmi 添加必须的组件  end -->
+
+
+        <!-- 友盟配置  start -->
+        <service
+            android:name="com.umeng.update.net.DownloadingService"
+            android:process=":DownloadingService" >
+        </service>
+
+        <activity
+            android:name="com.umeng.update.UpdateDialogActivity"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar" >
+        </activity>
+
+        <meta-data
+            android:name="UMENG_APPKEY"
+            android:value="563dec29e0f55a18be0034fb" />
+        <meta-data
+            android:name="UMENG_CHANNEL"
+            android:value="Channel ID" />
+        <!-- 友盟配置  end -->
+        
+        <!-- ###################注册SDK使用的Activity###################### -->
+        <!--分享编辑页-->
+        <activity
+            android:name="com.umeng.socialize.view.ShareActivity"
+            android:configChanges="orientation|keyboard"
+            android:launchMode="singleTask"
+            android:noHistory="true"
+            android:theme="@style/Theme.UMDialog"
+            android:windowSoftInputMode="stateVisible|adjustResize" >
+        </activity>
+
+        <!-- ############ QQ空间和QQ SSO授权的Activity注册 ############ -->
+        <activity
+            android:name="com.tencent.tauth.AuthActivity"
+            android:launchMode="singleTask"
+            android:noHistory="true" >
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+                <!-- 100424468，如果你使用的公用账号，则不需要修改；否则修改成你在QQ开放平台申请的 APP ID-->
+                <data android:scheme="tencent100424468" /> 
+            </intent-filter>
+        </activity>
+        <activity android:name="com.tencent.connect.common.AssistActivity"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar"
+            android:screenOrientation="portrait">
+        </activity>
+    </application>
+
+    
+</manifest>

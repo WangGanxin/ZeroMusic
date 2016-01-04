@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="60dp"
+    android:background="@drawable/sel_list_item"
+    android:descendantFocusability="blocksDescendants"
+    android:orientation="vertical" 
+    android:id="@+id/search_song_listview_item_layout">
+
+    <TextView
+        android:id="@+id/search_song_listview_item_song"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+        android:ellipsize="end"
+        android:maxEms="12"
+        android:singleLine="true"
+        android:text="@string/song"
+        android:textColor="@color/black"
+        android:textSize="18sp" />
+
+    <TextView
+        android:id="@+id/search_song_listview_item_artist"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/search_song_listview_item_song"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="3dp"
+        android:ellipsize="end"
+        android:maxEms="12"  
+        android:singleLine="true"
+        android:text="@string/artist"
+        android:textColor="@color/darkgrey"
+        android:textSize="14sp" />
+
+    <RelativeLayout
+        android:layout_width="60dp"
+        android:layout_height="61dp"
+        android:layout_alignParentRight="true" 
+        android:background="@color/normal">
+
+        <ImageButton
+            android:id="@+id/search_song_listview_item_download"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:background="@drawable/sel_search_download_btn"
+            android:layout_centerInParent="true"/>
+
+        <TextView
+            android:layout_width="0.1dp"
+            android:layout_height="fill_parent"
+            android:layout_marginBottom="5dp"
+            android:layout_marginTop="5dp"
+            android:background="@color/lightgrey"/>
+    </RelativeLayout>
+
+</RelativeLayout>

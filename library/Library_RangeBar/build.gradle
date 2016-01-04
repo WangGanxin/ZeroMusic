@@ -1,0 +1,51 @@
+apply plugin: 'com.android.library'
+apply plugin: 'maven'
+apply plugin: 'signing'
+apply from: '../maven_push.gradle'
+
+version = "1.0"
+group = "com.appyvet"
+
+android {
+
+    compileSdkVersion 21
+    buildToolsVersion "21.1.2"
+
+    defaultConfig {
+        minSdkVersion 12
+        targetSdkVersion 21
+    }
+
+    sourceSets {
+        main {
+            manifest.srcFile 'AndroidManifest.xml'
+            java.srcDirs = ['src']
+            res.srcDirs = ['res']
+        }
+    }
+}
+
+repositories {
+    mavenCentral()
+}
+
+//signing {
+//    required { has("release") && gradle.taskGraph.hasTask("uploadArchives") }
+//    sign configurations.archives
+//}
+
+task publishLocal(type: Upload) {
+    configuration = configurations.archives
+    repositories.mavenDeployer {
+        repository(url: "file://$buildDir/repo")
+    }
+
+    task sourcesJar(type: Jar) {
+        classifier = 'sources'
+        from android.sourceSets.main.java.srcDirs
+    }
+
+    task generateJavadocs(type: Javadoc) {
+        source = android.sourceSets.main.java.srcDirs
+    }
+}

@@ -54,4 +54,4 @@ MP3音乐接口来自网络，请低调使用~
 
  不是什么大神牛人，只想做一枚简简单单的程序猿，在技术前行的道路上越走越远~
 
- email:ganxinvip@163.com
+ email:mail@wangganxin.me

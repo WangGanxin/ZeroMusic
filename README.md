@@ -1,13 +1,14 @@
+# @Deprecated
 # ZeroMusic-零听音乐
 
-###说明
+### 说明
 简简单单的一款音乐App，界面看起来还是ok的，因为是较早搭建的一个项目，代码有些写得比较幼稚的地方，还请各位海涵~废话不多说，先上图吧！
-###截图
+### 截图
 ![github](https://github.com/GanxinWang/ZeroMusic/blob/master/screenshot01.png "零听音乐")
 ![github](https://github.com/GanxinWang/ZeroMusic/blob/master/screenshot02.png "零听音乐")
 ![github](https://github.com/GanxinWang/ZeroMusic/blob/master/screenshot03.png "零听音乐")
 ![github](https://github.com/GanxinWang/ZeroMusic/blob/master/screenshot04.png "零听音乐")
-###功能
+### 功能
 - 首次启动引导页展示
 - 在线更换首页图片
 - 音乐的基本播放控制（播放/暂停、上/下一首、静音、4种播放模式、进度条）
@@ -25,7 +26,7 @@
 - 社会化分享
 - 开屏广告、广告条展示
 
-###技术
+### 技术
 - [volley](https://android.googlesource.com/platform/frameworks/volley)网络请求框架+gson解析
 - [volley](https://android.googlesource.com/platform/frameworks/volley)图片加载
 - [xUtils](https://github.com/wyouflf/xUtils)下载管理框架
@@ -39,18 +40,18 @@
 - 友盟在线更新、埋点（应用统计）、社会化分享SDK集成
 - 有米广告SDK集成
 
-###说明
+### 说明
 MP3音乐接口来自网络，请低调使用~
 低调使用~低调使用~
 重要的事情说三遍。。。
-###下载
+### 下载
 官网：[http://zeromusic.kuaizhan.com](http://zeromusic.kuaizhan.com)
 
 百度市场：[http://shouji.baidu.com/software/item?docid=8225741](http://shouji.baidu.com/software/item?docid=8225741)
 
 豌豆荚：[http://www.wandoujia.com/apps/com.ganxin.zeromusic.view](http://www.wandoujia.com/apps/com.ganxin.zeromusic.view)
 
-###关于
+### 关于
 
  不是什么大神牛人，只想做一枚简简单单的程序猿，在技术前行的道路上越走越远~
 
